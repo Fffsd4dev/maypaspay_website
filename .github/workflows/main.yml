@@ -1,4 +1,5 @@
 name: React JS Deploy to cPanel
+
 on:
   push:
     branches:
@@ -9,7 +10,7 @@ permissions:
 
 jobs:
   # ============================================================
-  # BUILD / VALIDATION
+  # BUILD
   # ============================================================
   build:
     name: Build React Application
@@ -39,7 +40,6 @@ jobs:
           echo "========================================"
           echo "NODE VERSION"
           echo "========================================"
-
           node -v
           npm -v
 
@@ -51,7 +51,6 @@ jobs:
           echo "========================================"
           echo "INSTALLING NPM DEPENDENCIES"
           echo "========================================"
-
           npm ci
 
       # ==========================================================
@@ -62,7 +61,6 @@ jobs:
           echo "========================================"
           echo "BUILDING REACT APPLICATION"
           echo "========================================"
-
           npm run build
 
       # ==========================================================
@@ -86,6 +84,16 @@ jobs:
 
           echo "React build completed successfully."
 
+      # ==========================================================
+      # UPLOAD BUILD ARTIFACT
+      # ==========================================================
+      - name: Upload React build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: react-build
+          path: dist/
+          include-hidden-files: true
+
   # ============================================================
   # DEPLOYMENT
   # ============================================================
@@ -96,169 +104,102 @@ jobs:
 
     steps:
       # ==========================================================
-      # CHECKOUT
+      # DOWNLOAD BUILD ARTIFACT
       # ==========================================================
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      # ==========================================================
-      # SETUP NODE.JS
-      # ==========================================================
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Download React build
+        uses: actions/download-artifact@v4
         with:
-          node-version: "20"
+          name: react-build
+          path: dist
 
       # ==========================================================
-      # INSTALL NPM DEPENDENCIES
+      # VERIFY DOWNLOADED BUILD
       # ==========================================================
-      - name: Install npm dependencies
+      - name: Verify downloaded build
         run: |
           echo "========================================"
-          echo "INSTALLING NPM DEPENDENCIES"
+          echo "VERIFYING DOWNLOADED BUILD"
           echo "========================================"
 
-          npm ci
+          if [ ! -f "dist/index.html" ]; then
+            echo "ERROR: dist/index.html was not found."
+            exit 1
+          fi
+
+          echo "Build artifact verified successfully."
 
       # ==========================================================
-      # BUILD REACT APPLICATION
+      # UPLOAD BUILD TO CPANEL
       # ==========================================================
-      - name: Build React application
-        run: |
-          echo "========================================"
-          echo "BUILDING REACT APPLICATION"
-          echo "========================================"
-
-          npm run build
-
-      # ==========================================================
-      # DEPLOY DIST TO CPANEL
-      # ==========================================================
-      - name: Deploy to cPanel via SSH
-        uses: appleboy/ssh-action@v1.0.3
+      - name: Upload build to cPanel
+        uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           port: 21098
+          source: "dist/*"
+          target: "${{ secrets.DEPLOY_PATH }}/.github-deploy"
+          strip_components: 1
+          overwrite: true
 
+      # ==========================================================
+      # DEPLOY BUILD
+      # ==========================================================
+      - name: Publish React build
+        uses: appleboy/ssh-action@v1.2.2
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          port: 21098
+          timeout: 30s
+          command_timeout: 10m
           script: |
             set -e
 
-            # ====================================================
-            # CONFIGURATION
-            # ====================================================
-
             DEPLOY_PATH="${{ secrets.DEPLOY_PATH }}"
+            BUILD_PATH="$DEPLOY_PATH/.github-deploy"
 
             echo "========================================"
             echo "DEPLOYMENT PATH"
             echo "========================================"
-
             echo "$DEPLOY_PATH"
-
-            # ====================================================
-            # CHECK NODE.JS
-            # ====================================================
-
-            echo "========================================"
-            echo "CHECKING NODE.JS"
-            echo "========================================"
-
-            node -v
-            npm -v
-
-            # ====================================================
-            # MOVE TO APPLICATION DIRECTORY
-            # ====================================================
-
-            cd "$DEPLOY_PATH"
-
-            # ====================================================
-            # FETCH LATEST CODE
-            # ====================================================
-
-            echo "========================================"
-            echo "FETCHING LATEST CODE"
-            echo "========================================"
-
-            git fetch origin
-            git checkout main
-            git reset --hard origin/main
-
-            echo "Current commit:"
-            git rev-parse --short HEAD
-
-            # ====================================================
-            # INSTALL NPM DEPENDENCIES
-            # ====================================================
-
-            echo "========================================"
-            echo "INSTALLING NPM DEPENDENCIES"
-            echo "========================================"
-
-            npm ci
-
-            # ====================================================
-            # BUILD REACT APPLICATION
-            # ====================================================
-
-            echo "========================================"
-            echo "BUILDING REACT APPLICATION"
-            echo "========================================"
-
-            npm run build
-
-            # ====================================================
-            # VERIFY BUILD
-            # ====================================================
 
             echo "========================================"
             echo "VERIFYING BUILD"
             echo "========================================"
 
-            if [ ! -d "dist" ]; then
-                echo "ERROR: dist directory does not exist."
-                exit 1
+            if [ ! -f "$BUILD_PATH/index.html" ]; then
+              echo "ERROR: Uploaded React build was not found."
+              exit 1
             fi
 
-            if [ ! -f "dist/index.html" ]; then
-                echo "ERROR: dist/index.html does not exist."
-                exit 1
-            fi
-
-            echo "Build verified successfully."
-
-            # ====================================================
-            # DEPLOY DIST TO PUBLIC DIRECTORY
-            # ====================================================
+            echo "Build found successfully."
 
             echo "========================================"
-            echo "DEPLOYING REACT BUILD"
+            echo "PUBLISHING REACT BUILD"
             echo "========================================"
 
-            rm -rf public_html/*
+            find "$DEPLOY_PATH" -mindepth 1 -maxdepth 1 \
+              ! -name ".git" \
+              ! -name ".github-deploy" \
+              -exec rm -rf {} +
 
-            cp -R dist/. public_html/
+            cp -R "$BUILD_PATH"/. "$DEPLOY_PATH"/
 
-            # ====================================================
-            # PERMISSIONS
-            # ====================================================
+            rm -rf "$BUILD_PATH"
 
             echo "========================================"
             echo "SETTING PERMISSIONS"
             echo "========================================"
 
-            find public_html -type d -exec chmod 755 {} +
-            find public_html -type f -exec chmod 644 {} +
-
-            # ====================================================
-            # COMPLETE
-            # ====================================================
+            find "$DEPLOY_PATH" -type d -exec chmod 755 {} +
+            find "$DEPLOY_PATH" -type f -exec chmod 644 {} +
 
             echo "========================================"
             echo "DEPLOYMENT COMPLETED SUCCESSFULLY"
             echo "========================================"
 
-            echo "Deployed commit:"
-            git rev-parse --short HEAD
+            echo "Deployed files:"
+            ls -la "$DEPLOY_PATH"
