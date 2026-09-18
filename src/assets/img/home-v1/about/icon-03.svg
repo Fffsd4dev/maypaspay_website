@@ -1,0 +1,15 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" height="50">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="m0 0h50v50h-50z"/>
+		</clipPath>
+		<image  width="50" height="50" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyAQMAAAAk8RryAAAAAXNSR0IB2cksfwAAAAZQTFRF0d5v/gACeNFv3gAAAAJ0Uk5TAP9bkSK1AAAAy0lEQVR4nJ3NMQuCUBAH8Lue8No02lNpjsaaMunTtDXW5JOGHPsIfY02bWpsbQgTWgMdAgV9dm8Q26KO435wHPdH8HxwXIEoo3mdWMjKxJaZgTzP+mXRRT0t9LzS/rb508jKhxzQf5SXEaM88A6xS/kATkiD2hO+aGUvDsHSQPPK4TzpoHMkp4jeRuljXSgjcieCNVltxX716SI0UrK2Y/uu7D2HyorfxmpfdIHnZGLCaRYhoITEonxWQmaQPAc6adVTqLTfrUFV9M03vfGY8wnFUCUAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<g id="Clip-Path" clip-path="url(#cp1)">
+		<g>
+			<use  href="#img1" x="0" y="0"/>
+		</g>
+	</g>
+</svg>

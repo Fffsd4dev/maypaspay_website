@@ -1,0 +1,10 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" height="50">
+	<defs>
+		<image  width="18" height="8" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAIAQMAAADOTT3pAAAAAXNSR0IB2cksfwAAAAZQTFRF/gAC0d5vbgvCcgAAAAJ0Uk5T/wDltzBKAAAAHUlEQVR4nGNkYGBgbGhwQMEHHA4wPlDcz/hBeC8AhYQKSe1lp38AAAAASUVORK5CYII="/>
+		<image  width="38" height="35" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAjAQMAAADCPupeAAAAAXNSR0IB2cksfwAAAAZQTFRF0d5v/gACeNFv3gAAAAJ0Uk5TAP9bkSK1AAAAh0lEQVR4nHXOsQ3CMBQE0DtiKenMBqwBVbIBs1DhxnIiGo8Vb0I2cDoiJTbfCAqEaF51ujtCx9AR7TjviYxNsVoBsn4AA3UEwtvDHZjYjsD8peuB5a8ZLxO5MS/qZsXj2dJZlSXjqlSS3vxa+j9Osl7U0Zsg37wZ5Kc3JJO/7gjXXBqi7k/dE1o7TlC+mkQYAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<use  href="#img1" x="16" y="40"/>
+	<use  href="#img2" x="6" y="2"/>
+</svg>
