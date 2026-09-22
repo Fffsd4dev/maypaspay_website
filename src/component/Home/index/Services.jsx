@@ -15,38 +15,38 @@ export default function Services() {
         {
             icon : '#group-lcon', 
             number : '01', 
-            title : 'Global Digital Accounts Monitoring', 
-            desc : 'Manage your global capital with multi-currency accounts that support 40+ fiat currencies.', 
+            title : 'Instant Crypto Settlement', 
+            desc : 'Convert Bitcoin to Naira or Dollars instantly in seconds;  transparent fees, and best market conversion rates.', 
         },
         {
             icon : '#piggy-bank-icon', 
             number : '02', 
-            title : 'Treasury Asset Management', 
-            desc : 'Optimize your corporate liquidity through automated sweeping and high-yield.', 
+            title : 'Multi-Currency Virtual Cards', 
+            desc : 'Issue USD and NGN virtual cards in seconds to pay for global subscriptions, Meta ads, AWS, and online shopping with zero decline rates.', 
         },
         {
             icon : '#chart-line-icon', 
             number : '03', 
-            title : 'Corporate Lending & Credit', 
-            desc : 'Access flexible, revenue-based financing and instant working capital lines designed.', 
+            title : 'USD & Naira Bank Accounts', 
+            desc : 'Get dedicated account numbers in USD and NGN to receive foreign transfers, employer payouts, and local bank transfers effortlessly.', 
         },
         {
             icon : '#globe-icon', 
             number : '04', 
-            title : 'Payment & Merchant Services', 
-            desc : 'Power your global sales with a unified checkout API that supports instant merchant.', 
+            title : 'Frictionless Asset Exchange',
+            desc : 'Swap seamlessly between BTC, USD, and NGN inside one unified wallet without jumping across multiple platforms.', 
         },
         {
             icon : '#refresh-icon', 
             number : '05', 
-            title : 'Wealth & Personal Finance', 
-            desc : 'Build long-term wealth with AI-powered savings round-ups and fractional.', 
+            title : 'Multi-Currency Savings', 
+            desc : 'Store assets in stable currencies to hedge against inflation, earn competitive yields, and preserve long-term purchasing power.', 
         },
         {
             icon : '#credit-card-icon', 
             number : '06', 
-            title : 'Compliance & Security Assurance', 
-            desc : 'Secure your platform with biometric identity verification and automated screening.', 
+            title : 'Bank-Grade Infrastructure', 
+            desc : 'Protect your assets with multi-factor authentication, end-to-end encryption, and licensed institutional custody partners.', 
         }
     ];
 

@@ -261,11 +261,10 @@ export default function Footer() {
                         <div className="">
                             <h3 className="mb-6 text-white text-xl md:text-2xl font-semibold leading-none!">Main</h3>
                             <ul className="flex flex-col items-start gap-3 sm:gap-5">
-                                <li><Link className="text-paragraph_white leading-none duration-300 hover:text-primary block" to="/">Wealth Insights</Link></li>
-                                <li><Link className="text-paragraph_white leading-none duration-300 hover:text-primary block" to="/index-two">Digital-First Bank</Link></li>
-                                <li><Link className="text-paragraph_white leading-none duration-300 hover:text-primary block" to="/index-three">Institutional Trust Bank</Link></li>
-                                <li><Link className="text-paragraph_white leading-none duration-300 hover:text-primary block" to="/contact">Contact</Link></li>
-                                <li><Link className="text-paragraph_white leading-none duration-300 hover:text-primary block" to="/services">Service</Link></li>
+                                <li><Link className="text-paragraph_white leading-none duration-300 hover:text-primary block" to="/">Home</Link></li>
+                                <li><Link className="text-paragraph_white leading-none duration-300 hover:text-primary block" to="/about--us">About Us</Link></li>
+                                <li><Link className="text-paragraph_white leading-none duration-300 hover:text-primary block" to="/index-three">Services</Link></li>
+                                <li><Link className="text-paragraph_white leading-none duration-300 hover:text-primary block" to="/contact">Contact Us</Link></li>
                             </ul>
                         </div>
                         <div className="">
@@ -283,13 +282,13 @@ export default function Footer() {
                                 <li>
                                     <Link className="text-paragraph_white leading-snug duration-300 hover:text-primary flex items-start gap-2.5" to="https://www.google.com/maps" target="_blank">
                                         <img className="w-4" src={map} alt="map" />
-                                        <span className="flex-1">55 Main Street, 2nd block Melbourne, Australia</span>
+                                        <span className="flex-1">96a, Odudwa Crescent, GRA Ikeja. Lagos State, Nigeria</span>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link className="text-paragraph_white leading-none duration-300 hover:text-primary flex items-center gap-2.5" to="mailto:support@gmail.com">
+                                    <Link className="text-paragraph_white leading-none duration-300 hover:text-primary flex items-center gap-2.5" to="mailto:support@maypaspay.com">
                                         <img className="w-4" src={mail} alt="mail" />
-                                        <span className="flex-1">support@gmail.com</span>
+                                        <span className="flex-1">support@maypaspay.com</span>
                                     </Link>
                                 </li>
                                 <li>
@@ -303,7 +302,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="py-5 md:py-8 lg:py-10.5 flex items-center justify-between gap-4 sm:gap-6 flex-col sm:flex-row">
-                    <p className="text-paragraph_white text-center sm:text-left">© {new Date().getFullYear()} SecureVest. Developed by <Link to="https://shreethemes.in/" target="_blank" className="text-paragraph_white">Shreethemes</Link>.</p>
+                    <p className="text-paragraph_white text-center sm:text-left">© {new Date().getFullYear()} Maypas Pay.</p>
                     <div className="flex items-center gap-4">
                         <Link to="#" className="w-8.5 h-8.5 bg-white/10 rounded-full flex items-center justify-center text-white duration-300 hover:bg-primary hover:text-title_black" rel="noopener noreferrer" aria-label="Pinterest">
                             <svg className="w-4 h-4 fill-current">
