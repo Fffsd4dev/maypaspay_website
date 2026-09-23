@@ -176,7 +176,6 @@ export default function Journey() {
                         </div>
                         <h2 className="text-3xl md:text-4xl lg:text-[40px] xl:text-5xl font-bold leading-tight text-title_black mt-4" data-content>A legacy of financial innovation</h2>
                     </div>
-                    <p className="md:max-w-115 w-full text-base sm:text-lg text-paragraph_black" data-content>From a small fintech startup to a global banking leader, our mission has remained the same.</p>
                 </div>
                 <div ref={journeyRef} className="max-w-320 h-auto relative" data-journey-section>
                     <div className="absolute top-0 md:top-1/2 left-1/2 -translate-x-1/2 md:translate-x-0 md:left-0 w-[2px] md:w-full h-full md:h-0.5 bg-paragraph_white  md:translate-y-1/2" data-sttr-line></div>

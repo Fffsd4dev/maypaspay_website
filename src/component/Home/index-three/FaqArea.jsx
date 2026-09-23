@@ -84,8 +84,6 @@ export default function FaqArea() {
                         </div>
                         <h2 className="text-3xl md:text-4xl lg:text-[40px] xl:text-5xl font-bold leading-tight text-title_black mt-4" data-content>Your Banking Questions, Answered</h2>
                     </div>
-                    <p className="md:max-w-115 w-full text-base sm:text-lg text-paragraph_black" data-content>Transparency is our priority. We've compiled the most common
-                        inquiries regarding our security protocols, account tiers.</p>
                 </div>
 
                 <Faq />

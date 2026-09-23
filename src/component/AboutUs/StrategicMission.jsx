@@ -199,7 +199,6 @@ export default function StrategicMission() {
                         </div>
                         <h2 className="text-3xl md:text-4xl lg:text-[40px] xl:text-5xl font-bold leading-tight text-title_black mt-4" data-content>The smarter way to scale your global ambition</h2>
                     </div>
-                    <p className="md:max-w-115 w-full text-base sm:text-lg text-paragraph_black" data-content>Our mission is to provide the security of a traditional bank with the agility of modern fintech.</p>
                 </div>
                 
                 <div className="grid gap-12 sm:gap-16 lg:gap-20">

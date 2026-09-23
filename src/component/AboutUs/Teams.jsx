@@ -152,7 +152,6 @@ export default function Teams() {
                         </div>
                         <h2 className="text-3xl md:text-4xl lg:text-[40px] xl:text-5xl font-bold leading-tight text-title_white mt-4" data-content>Meet the minds behind your financial success</h2>
                     </div>
-                    <p className="md:max-w-115 w-full text-base sm:text-lg text-paragraph_white" data-content>Our team brings together decades of experience from the worldâ€™s leading financial institutions.</p>
                 </div>
                 <div ref={cardsRef} className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" data-sttr-wrapper>
                     
