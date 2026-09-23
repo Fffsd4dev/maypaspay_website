@@ -1,0 +1,205 @@
+name: React JS Deploy to cPanel
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  # ============================================================
+  # BUILD
+  # ============================================================
+  build:
+    name: Build React Application
+    runs-on: ubuntu-latest
+
+    steps:
+      # ==========================================================
+      # CHECKOUT
+      # ==========================================================
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # ==========================================================
+      # SETUP NODE.JS
+      # ==========================================================
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      # ==========================================================
+      # VERIFY NODE / NPM
+      # ==========================================================
+      - name: Check Node.js and npm
+        run: |
+          echo "========================================"
+          echo "NODE VERSION"
+          echo "========================================"
+          node -v
+          npm -v
+
+      # ==========================================================
+      # INSTALL DEPENDENCIES
+      # ==========================================================
+      - name: Install npm dependencies
+        run: |
+          echo "========================================"
+          echo "INSTALLING NPM DEPENDENCIES"
+          echo "========================================"
+          npm ci
+
+      # ==========================================================
+      # BUILD REACT APPLICATION
+      # ==========================================================
+      - name: Build React application
+        run: |
+          echo "========================================"
+          echo "BUILDING REACT APPLICATION"
+          echo "========================================"
+          npm run build
+
+      # ==========================================================
+      # VERIFY BUILD
+      # ==========================================================
+      - name: Verify build
+        run: |
+          echo "========================================"
+          echo "VERIFYING BUILD"
+          echo "========================================"
+
+          if [ ! -d "dist" ]; then
+            echo "ERROR: dist directory was not created."
+            exit 1
+          fi
+
+          if [ ! -f "dist/index.html" ]; then
+            echo "ERROR: dist/index.html was not created."
+            exit 1
+          fi
+
+          echo "React build completed successfully."
+
+      # ==========================================================
+      # UPLOAD BUILD ARTIFACT
+      # ==========================================================
+      - name: Upload React build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: react-build
+          path: dist/
+          include-hidden-files: true
+
+  # ============================================================
+  # DEPLOYMENT
+  # ============================================================
+  deploy:
+    name: Deploy React Application to cPanel
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      # ==========================================================
+      # DOWNLOAD BUILD ARTIFACT
+      # ==========================================================
+      - name: Download React build
+        uses: actions/download-artifact@v4
+        with:
+          name: react-build
+          path: dist
+
+      # ==========================================================
+      # VERIFY DOWNLOADED BUILD
+      # ==========================================================
+      - name: Verify downloaded build
+        run: |
+          echo "========================================"
+          echo "VERIFYING DOWNLOADED BUILD"
+          echo "========================================"
+
+          if [ ! -f "dist/index.html" ]; then
+            echo "ERROR: dist/index.html was not found."
+            exit 1
+          fi
+
+          echo "Build artifact verified successfully."
+
+      # ==========================================================
+      # UPLOAD BUILD TO CPANEL
+      # ==========================================================
+      - name: Upload build to cPanel
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          port: 21098
+          source: "dist/*"
+          target: "${{ secrets.DEPLOY_PATH }}/.github-deploy"
+          strip_components: 1
+          overwrite: true
+
+      # ==========================================================
+      # DEPLOY BUILD
+      # ==========================================================
+      - name: Publish React build
+        uses: appleboy/ssh-action@v1.2.2
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          port: 21098
+          timeout: 30s
+          command_timeout: 10m
+          script: |
+            set -e
+
+            DEPLOY_PATH="${{ secrets.DEPLOY_PATH }}"
+            BUILD_PATH="$DEPLOY_PATH/.github-deploy"
+
+            echo "========================================"
+            echo "DEPLOYMENT PATH"
+            echo "========================================"
+            echo "$DEPLOY_PATH"
+
+            echo "========================================"
+            echo "VERIFYING BUILD"
+            echo "========================================"
+
+            if [ ! -f "$BUILD_PATH/index.html" ]; then
+              echo "ERROR: Uploaded React build was not found."
+              exit 1
+            fi
+
+            echo "Build found successfully."
+
+            echo "========================================"
+            echo "PUBLISHING REACT BUILD"
+            echo "========================================"
+
+            find "$DEPLOY_PATH" -mindepth 1 -maxdepth 1 \
+              ! -name ".git" \
+              ! -name ".github-deploy" \
+              -exec rm -rf {} +
+
+            cp -R "$BUILD_PATH"/. "$DEPLOY_PATH"/
+
+            rm -rf "$BUILD_PATH"
+
+            echo "========================================"
+            echo "SETTING PERMISSIONS"
+            echo "========================================"
+
+            find "$DEPLOY_PATH" -type d -exec chmod 755 {} +
+            find "$DEPLOY_PATH" -type f -exec chmod 644 {} +
+
+            echo "========================================"
+            echo "DEPLOYMENT COMPLETED SUCCESSFULLY"
+            echo "========================================"
+
+            echo "Deployed files:"
+            ls -la "$DEPLOY_PATH"
