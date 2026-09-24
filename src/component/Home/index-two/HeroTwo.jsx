@@ -104,7 +104,7 @@ export default function HeroTwo() {
                     <div className="md:max-w-137.5 w-full">
                         <div className="flex items-center gap-2.5" data-subtitle>
                             <img className="rotate" src={titleIcon} alt="title-icon" />
-                            <p className="text-base sm:text-lg font-semibold leading-[1.1]! text-secondary uppercase">SMART LENDING</p>
+                            <p className="text-base sm:text-lg font-semibold leading-[1.1]! text-secondary uppercase">SMART ASSETS</p>
                         </div>
                         <h1 className="text-4xl sm:text-[30px] md:text-5xl lg:text-[42px] xl:text-[54px] font-bold leading-[1.1]! text-title_black mt-4 md:mt-5" data-title>Turn Crypto to Cash. Spend Dollars. Cash Out Naira.</h1>
                         <p className="text-base text-paragraph_black mt-4" data-excerpt>Convert your crypto to Naira or USD at the best market rates. Fund virtual cards, spend globally, and cash out securely on one trusted platform. </p>
