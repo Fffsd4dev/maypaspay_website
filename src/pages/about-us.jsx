@@ -27,7 +27,7 @@ export default function AboutUs() {
                 <main id="main-content">
                     <HeroAbout />
                     <StrategicMission />
-                    <Journey />
+                    {/* <Journey /> */}
                     <Teams />
                     <FaqArea />
                 </main>

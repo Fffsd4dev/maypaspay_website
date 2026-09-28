@@ -253,10 +253,10 @@ export default function BankingArea() {
 				<div className="md:max-w-135 w-full md:py-5 lg:py-8 xl:py-10">
 					<div className="flex items-center gap-2.5">
 						<img className="rotate" src={titlePrimary} alt="title-icon" />
-						<span className="text-base md:text-lg font-semibold leading-[1.1]! text-primary capitalize">BORDERLESS BANKING</span>
+						<span className="text-base md:text-lg font-semibold leading-[1.1]! text-primary capitalize">LIMITLESS BANKING</span>
 					</div>
-					<h3 className="font-bold leading-tight text-white mt-4" data-content>One card for all your global journeys</h3>
-					<p className="mt-4 sm:mt-5 text-base sm:text-lg text-paragraph_white" data-content>Unlock the power of instant multi-currency accounts. Swap between USD, EUR, GBP, and more in seconds with the highest security standards in the industry.</p>
+					<h3 className="font-bold leading-tight text-white mt-4" data-content>One card for all your global transactions</h3>
+					<p className="mt-4 sm:mt-5 text-base sm:text-lg text-paragraph_white" data-content>Say goodbye to card declines and foreign spending limits. Fund your USD or Naira virtual card instantly using crypto, USD, or local bank transfers, and pay for subscriptions, ads, and online shopping anywhere Mastercard & Visa are accepted.</p>
 					<div className="mt-6 sm:mt-8 md:mt-10 lg:mt-12 btn-sttr">
 						<Link className="button-primary" to="/contact">Get Your Card</Link>
 					</div>

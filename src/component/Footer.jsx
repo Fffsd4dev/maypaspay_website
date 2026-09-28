@@ -219,7 +219,7 @@ export default function Footer() {
                     <div className="py-10 lg:py-12.5 lg:max-w-87.5 w-full flex flex-col sm:flex-row lg:flex-col justify-between gap-6 sm:items-end">
                         <div className="sm:max-w-100 lg:mx-none w-full">
                             <img className="w-[70%] md:w-auto max-[350px]" src={footerLogo} alt="footer-logo" />
-                            <p className="mt-4 sm:mt-6 md:mt-8 text-paragraph_white">Streamline your global operations, automate compliance, and drive financial innovation with our all-in-one institutional-grade platform.</p>
+                            <p className="mt-4 sm:mt-6 md:mt-8 text-paragraph_white">Streamline your global payments, convert assets instantly, and spend without limits with Africa's all-in-one borderless financial hub.</p>
                         </div>
 
                         <form onSubmit={handleSubmit} className="relative w-full max-w-95 sm:max-w-100 lg:max-w-none" id="footer-newsletter-form" noValidate data-gramm="false" data-gramm_editor="false" data-enable-grammarly="false">

@@ -3,8 +3,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import titleIcon from "../../assets/img/title-icon.svg";
-import aboutUsImg1 from "../../assets/img/about-us/about-us-img-1.webp";
-import aboutUsImg2 from "../../assets/img/about-us/about-us-img-2.webp";
+import aboutUsImg1 from "../../assets/img/female-student-using-mobile-device.jpg.jpeg";
+import aboutUsImg2 from "../../assets/img/as.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -197,7 +197,7 @@ export default function StrategicMission() {
                             <img className="rotate" src={titleIcon} alt="title-icon" />
                             <span className="text-base lg:text-lg font-semibold leading-[1.1]! text-secondary uppercase block">OUR STRATEGIC MISSION</span>
                         </div>
-                        <h2 className="text-3xl md:text-4xl lg:text-[40px] xl:text-5xl font-bold leading-tight text-title_black mt-4" data-content>The smarter way to scale your global ambition</h2>
+                        <h2 className="text-3xl md:text-4xl lg:text-[40px] xl:text-5xl font-bold leading-tight text-title_black mt-4" data-content>The borderless banking for your global finance</h2>
                     </div>
                 </div>
                 
@@ -207,22 +207,18 @@ export default function StrategicMission() {
                             <img className="w-full lg:max-w-full rounded-3xl" src={aboutUsImg1} alt="SecureVest illustration" />
                         </div>
                         <div className="" data-sttr-card>
-                            <h3 className="text-title_black leading-none text-xl md:text-2xl font-semibold">Redefining Digital Security</h3>
-                            <p className="text-base font-normal text-paragraph_black leading-normal mt-3">At SecureVest, we exist to bridge the gap between institutional stability and the speed of the digital economy. At SecureVest, we exist to bridge the gap between institutional stability and the speed of the digital economy. At SecureVest, we exist to bridge the gap between institutional stability and the speed of the digital economy.
+                            <h3 className="text-title_black leading-none text-xl md:text-2xl font-semibold">Redefining Africa Finance</h3>
+                            <p className="text-base font-normal text-paragraph_black leading-normal mt-3">At Maypas Pay, we exist to bridge the gap between local liquidity and the global digital economy. We empower creators, traders, freelancers, and businesses to hold, swap, and spend crypto, USD, and Naira effortlessly, without card declines, settlement delays, or artificial banking borders.
                             </p>
 
                             <div className="flex flex-row gap-10 justify-between flex-wrap mt-6 md:mt-9">
                                 <div className="flex flex-col gap-2">
-                                    <h3 className="text-secondary leading-none text-4xl lg:text-5xl">$10B+</h3>
-                                    <p className="text-base lg:text-lg font-normal text-title_black leading-[1.2] xl:leading-none">Capital Deployed</p>
+                                    <h3 className="text-secondary leading-none text-4xl lg:text-5xl">50+</h3>
+                                    <p className="text-base lg:text-lg font-normal text-title_black leading-[1.2] xl:leading-none">Countries</p>
                                 </div>
                                 <div className="flex flex-col gap-2">
-                                    <h3 className="text-secondary leading-none text-4xl lg:text-5xl">12.4%</h3>
-                                    <p className="text-base lg:text-lg font-normal text-title_black leading-[1.2] xl:leading-none">CET1 Ratio</p>
-                                </div>
-                                <div className="flex flex-col gap-2">
-                                    <h3 className="text-secondary leading-none text-4xl lg:text-5xl">150+</h3>
-                                    <p className=" text-base lg:text-lg font-normal text-title_black leading-[1.2] xl:leading-none">Countries Served</p>
+                                    <h3 className="text-secondary leading-none text-4xl lg:text-5xl">1 Billion</h3>
+                                    <p className="text-base lg:text-lg font-normal text-title_black leading-[1.2] xl:leading-none">CApital Deployed</p>
                                 </div>
                             </div>
                         </div>
@@ -245,7 +241,7 @@ export default function StrategicMission() {
                                 </div>
                                 <div className="faq-body hidden">
                                     <div className="mt-3.5">
-                                        <p className="text-paragraph_black">Our vision is to create a streamlined journey where capital moves from initial inquiry to a funded account in record time.</p>
+                                        <p className="text-paragraph_black">Our vision is to create a seamless borderless ecosystem where your funds move from Bitcoin, USD, or Naira into spendable cards in seconds.</p>
                                     </div>
                                 </div>
                             </div>
@@ -265,7 +261,7 @@ export default function StrategicMission() {
                                 </div>
                                 <div className="faq-body hidden">
                                     <div className="mt-3.5">
-                                        <p className="text-paragraph_black">Seamlessly connect with global financial networks to manage treasury operations more efficiently.</p>
+                                        <p className="text-paragraph_black">Receive international payments, hold foreign & digital currency, and settle transactions with complete financial sovereignty.</p>
                                     </div>
                                 </div>
                             </div>
@@ -285,7 +281,7 @@ export default function StrategicMission() {
                                 </div>
                                 <div className="faq-body hidden">
                                     <div className="mt-3.5">
-                                        <p className="text-paragraph_black">Harness the power of artificial intelligence to enhance equity analysis and investment strategies.</p>
+                                        <p className="text-paragraph_black">Harness an all-in-one financial operating system designed for instant crypto swaps, real-time conversion rates, and high-success virtual USD and NGN cards—all secured by institutional-grade custody.</p>
                                     </div>
                                 </div>
                             </div>

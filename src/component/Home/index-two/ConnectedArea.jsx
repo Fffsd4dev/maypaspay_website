@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
 
 import titleIcon from "../../../assets/img/title-icon.svg";
-import connectedThumb from "../../../assets/img/home-v2/connected-thumb.webp";
+import connectedThumb from "../../../assets/img/happy-customer-service-agent.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -195,13 +195,12 @@ export default function ConnectedArea() {
                             <div className="">
                                 <p className="text-white">
                                     <Link className="text-white" to="tel:08008961234">0800 896 1234</Link>
-                                    <span className="text-paragraph_white">(Toll Free)</span>
                                 </p>
-                                <p className="text-paragraph_white leading-none mt-1">Personal</p>
+                                <p className="text-paragraph_white leading-none mt-1">Complaints</p>
                             </div>
                             <div className="">
                                 <Link to="tel:+496912345678" className="text-white leading-none">+49&nbsp;69&nbsp;1234&nbsp;5678</Link>
-                                <p className="text-paragraph_white leading-none mt-1">Corporate</p>
+                                <p className="text-paragraph_white leading-none mt-1">Enquiries</p>
                             </div>
                         </div>
                         <div className="mt-7.5">
@@ -222,7 +221,7 @@ export default function ConnectedArea() {
                                 <svg className="w-4 sm:w-5 h-4 sm:h-5 fill-current">
                                     <use href="#faqIcon-01"></use>
                                 </svg>
-                                <span className="flex-1">Live Payment Assistance</span>
+                                <span className="flex-1">Live Payment & Swap Assistance</span>
                             </button>
                             <button type="button" className="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-title_black faq-icon">
                                 <svg className="w-3 h-3 fill-current">
@@ -232,7 +231,7 @@ export default function ConnectedArea() {
                         </div>
                         <div className="faq-body hidden">
                             <div className="mt-4 sm:mt-5 sm:max-w-[90%]">
-                                <p className="text-paragraph_black">SecrureVest is a next-generation AI writing platform designed to help creators, entrepreneurs, and teams produce high-quality content faster and smarter. It blends advanced language models with real-time context awareness, allowing you to generate human-sounding writing that feels natural, emotionally intelligent, and aligned with your brand's voice.</p>
+                                <p className="text-paragraph_black">Get real-time human assistance for cross-border transactions, instant crypto-to-fiat swaps, and deposit confirmations. Maypas Pay provides 24/7 priority support to ensure your transfers, virtual card funding, and currency conversions process smoothly without unnecessary delays.</p>
                             </div>
                         </div>
                     </div>
@@ -242,7 +241,7 @@ export default function ConnectedArea() {
                                 <svg className="w-4 sm:w-5 h-4 sm:h-5 fill-current">
                                     <use href="#faqIcon-02"></use>
                                 </svg>
-                                <span className="flex-1">Instant Account Support</span>
+                                <span className="flex-1">Instant Account & KYC Support</span>
                             </button>
                             <button type="button" className="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-title_black faq-icon">
                                 <svg className="w-3 h-3 fill-current">
@@ -252,7 +251,7 @@ export default function ConnectedArea() {
                         </div>
                         <div className="faq-body hidden">
                             <div className="mt-4 sm:mt-5 sm:max-w-[90%]">
-                                <p className="text-paragraph_black">Get quick and reliable help for any account-related issue. Our support team assists with login problems, profile updates, and account verification to ensure everything runs smoothly. We are always ready to provide guidance and resolve issues so you can manage your account without interruption.</p>
+                                <p className="text-paragraph_black">Fast-track your identity verification and resolve login or profile issues in minutes. Our team provides step-by-step guidance so you can verify your account, update limits, and manage your multi-currency wallets without service interruptions.</p>
                             </div>
                         </div>
                     </div>
@@ -262,7 +261,7 @@ export default function ConnectedArea() {
                                 <svg className="w-4 sm:w-5 h-4 sm:h-5 fill-current">
                                     <use href="#faqIcon-03"></use>
                                 </svg>
-                                <span className="flex-1">Emergency Card Services</span>
+                                <span className="flex-1">Emergency Card Controls</span>
                             </button>
                             <button type="button" className="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-title_black faq-icon">
                                 <svg className="w-3 h-3 fill-current">
@@ -272,7 +271,7 @@ export default function ConnectedArea() {
                         </div>
                         <div className="faq-body hidden">
                             <div className="mt-4 sm:mt-5 sm:max-w-[90%]">
-                                <p className="text-paragraph_black">Quickly report lost or stolen cards and secure your account instantly. Our emergency service allows you to block your card and request a replacement without delay. This ensures your banking remains protected and you can continue your transactions safely.</p>
+                                <p className="text-paragraph_black">Freeze, unfreeze, or terminate virtual cards instantly from your app or via priority support. Protect your funds against compromised billing details, handle unexpected online merchant charges, and issue a fresh USD or NGN card with one tap.</p>
                             </div>
                         </div>
                     </div>
@@ -302,7 +301,7 @@ export default function ConnectedArea() {
                                 <svg className="w-4 sm:w-5 h-4 sm:h-5 fill-current">
                                     <use href="#faqIcon-05"></use>
                                 </svg>
-                                <span className="flex-1">Digital Onboarding Guide</span>
+                                <span className="flex-1">Digital Onboarding & Asset Guide</span>
                             </button>
                             <button type="button" className="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-title_black faq-icon">
                                 <svg className="w-3 h-3 fill-current">
@@ -312,7 +311,7 @@ export default function ConnectedArea() {
                         </div>
                         <div className="faq-body hidden">
                             <div className="mt-4 sm:mt-5 sm:max-w-[90%]">
-                                <p className="text-paragraph_black">Start your digital banking journey with an easy step-by-step onboarding process. Complete your account setup, identity verification, and service activation quickly through our secure system. Enjoy convenient and modern banking services from anywhere.</p>
+                                <p className="text-paragraph_black">New to cross-border accounts or crypto off-ramping? Access easy-to-follow walkthroughs on funding your USD account, converting BTC to Naira, setting up virtual cards for Meta Ads or AWS, and navigating your all-in-one wallet.</p>
                             </div>
                         </div>
                     </div>

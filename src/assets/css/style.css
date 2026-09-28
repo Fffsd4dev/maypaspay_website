@@ -8908,7 +8908,8 @@ section .pin-spacer {
     content: var(--tw-content);
     -webkit-user-select: none;
     user-select: none;
-    background: linear-gradient(180deg, rgba(17, 74, 67, 0.1) 50%, rgba(17, 74, 67, 1) 76.98%);
+    /* background: linear-gradient(180deg, rgba(17, 74, 67, 0.1) 50%, rgba(17, 74, 67, 1) 76.98%) */
+    background: linear-gradient(180deg, rgba(254, 0, 2, 0.05) 50%, rgba(120, 8, 10, 0.92) 76.98%);
   }
   &:hover {
     &::before {
