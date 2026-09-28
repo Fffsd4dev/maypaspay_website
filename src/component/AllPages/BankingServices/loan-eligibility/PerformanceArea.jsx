@@ -143,7 +143,7 @@ export default function PerformanceArea() {
                                 </div>
                                 <h2 className="text-3xl md:text-4xl lg:text-[40px] xl:text-5xl font-bold leading-tight text-title_white mt-4" data-content>How Your Credit Score Impacts Rates</h2>
                             </div>
-                            <p className="md:max-w-115 w-full text-base sm:text-lg text-paragraph_white" data-content>At SecureVest, we reward financial responsibility. Your credit score serves as a real-time risk indicator.</p>
+                            <p className="md:max-w-115 w-full text-base sm:text-lg text-paragraph_white" data-content>At Maypas Pay, we reward financial responsibility. Your credit score serves as a real-time risk indicator.</p>
                         </div>
                         <div ref={cardsRef} className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 md:mt-14 lg:mt-20" data-sttr-wrapper>
 
@@ -188,10 +188,10 @@ export default function PerformanceArea() {
                         
                         </div>
                         <div className="absolute bottom-0 left-0 pointer-events-none -z-1">
-                            <img src={getstratedPositon1} alt="SecureVest illustration" />
+                            <img src={getstratedPositon1} alt="Maypas Pay illustration" />
                         </div>
                         <div className="absolute top-0 right-0 pointer-events-none -z-1">
-                            <img src={getstratedPositon2} alt="SecureVest illustration" />
+                            <img src={getstratedPositon2} alt="Maypas Pay illustration" />
                         </div>
                     </div>
                 </div>

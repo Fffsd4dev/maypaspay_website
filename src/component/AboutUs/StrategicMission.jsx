@@ -204,7 +204,7 @@ export default function StrategicMission() {
                 <div className="grid gap-12 sm:gap-16 lg:gap-20">
                     <div ref={cardsRef1} className="grid grid-cols-1 md:grid-cols-2  gap-15 xl:gap-20 items-center" data-sttr-wrapper>
                         <div className="order-2 md:order-0" data-sttr-card>
-                            <img className="w-full lg:max-w-full rounded-3xl" src={aboutUsImg1} alt="SecureVest illustration" />
+                            <img className="w-full lg:max-w-full rounded-3xl" src={aboutUsImg1} alt="Maypas Pay illustration" />
                         </div>
                         <div className="" data-sttr-card>
                             <h3 className="text-title_black leading-none text-xl md:text-2xl font-semibold">Redefining Africa Finance</h3>
@@ -287,7 +287,7 @@ export default function StrategicMission() {
                             </div>
                         </div>
                         <div className="" data-sttr-card>
-                            <img className="w-full h-full rounded-3xl" src={aboutUsImg2} alt="SecureVest illustration" />
+                            <img className="w-full h-full rounded-3xl" src={aboutUsImg2} alt="Maypas Pay illustration" />
                         </div>
                     </div>		
                 </div>

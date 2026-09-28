@@ -991,7 +991,7 @@ export default function Navbar() {
                                                                             Sign Up</p>
                                                                         <p
                                                                             className="text-sm mt-1 text-white/60 lg:text-title_black/80">
-                                                                            Create your SecureVest account.</p>
+                                                                            Create your Maypas Pay account.</p>
                                                                     </div>
                                                                 </Link>
                                                             </div>
@@ -1591,7 +1591,7 @@ export default function Navbar() {
                                                                     className="megamenu-item-title text-base leading-none text-white lg:text-title_black font-semibold">
                                                                     Sign Up</p>
                                                                 <p className="text-sm mt-1 text-white/60 lg:text-title_black/80">Create
-                                                                    your SecureVest account.</p>
+                                                                    your Maypas Pay account.</p>
                                                             </div>
                                                         </Link>
                                                     </div>

@@ -46,7 +46,7 @@ export default function HeroError() {
             <div className="container">
                 <div>
                     <div className="max-w-80 sm:max-w-110 md:max-w-155.5 max-h-76.5 mx-auto text-center" data-sttr-card>
-                        <img src={error404} alt="SecureVest illustration" />
+                        <img src={error404} alt="Maypas Pay illustration" />
                     </div>
                     <div className="mt-6 md:mt-10 lg:mt-12.5 text-center">
                         <h1 className="text-4xl sm:text-[40px] md:text-5xl lg:text-[52px] xl:text-[64px] font-bold" data-sttr-card>Page Not Found!</h1>

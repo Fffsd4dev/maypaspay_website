@@ -154,7 +154,7 @@ export default function Popup() {
                             ref={iframeRef}
                             className="w-full h-112.5 pointer-events-auto!"
                             id="popup-video"
-                            title="SecureVest promotional video"
+                            title="Maypas Pay promotional video"
                             allow="autoplay; encrypted-media"
                             allowFullScreen
                             src={videoSrc}

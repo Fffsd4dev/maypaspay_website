@@ -52,7 +52,7 @@ export default function HeroLoan() {
                             <span className="text-base lg:text-lg font-semibold leading-[1.1]! text-primary uppercase">FLEXIBLE FINANCING</span>
                         </div>
                         <h1 className="mt-4 text-3xl md:text-4xl lg:text-[40px] xl:text-5xl text-title_white leading-tight!" data-sttr-card>Your Future with Flexible Financing.</h1>
-                        <p className="text-lg font-normal leading-normal text-paragraph_white mt-4" data-sttr-card>From personal milestones to business breakthroughs, SecureVest provides the capital you need with a process that respects your time. Get funded in as little as 24 hours.</p>
+                        <p className="text-lg font-normal leading-normal text-paragraph_white mt-4" data-sttr-card>From personal milestones to business breakthroughs, Maypas Pay provides the capital you need with a process that respects your time. Get funded in as little as 24 hours.</p>
                         <ul className="flex flex-col gap-4 mt-9" data-sttr-card>
                             <li className="flex gap-3.25 items-start text-base font-normal leading-normal text-paragraph_white">
                                 <svg className="mt-0.5 w-5 h-5 fill-current">

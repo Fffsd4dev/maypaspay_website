@@ -40,7 +40,7 @@ export default function Knowledge() {
         {
             icon : '#knowledgehub-icon7', 
             title : 'ESG Sustainable Investment Portfolio', 
-            desc : 'Explore how SecureVest is integrating Environmental, Social, and Governance criteria into our long-term capital allocation models.',
+            desc : 'Explore how Maypas Pay is integrating Environmental, Social, and Governance criteria into our long-term capital allocation models.',
         }
     ];
 

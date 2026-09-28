@@ -84,7 +84,7 @@ export default function InstitutionalArea() {
                         </div>
                         <h2 className="text-3xl md:text-4xl lg:text-[40px] xl:text-5xl font-bold leading-tight text-title_black mt-4" data-content>Precision Performance for Global Capital</h2>
                     </div>
-                    <p className="md:max-w-115 w-full text-base sm:text-lg text-paragraph_black" data-content>At SecureVest, we define success through the stability and growth of our clients. Our core metrics reflect a commitment to liquidity.</p>
+                    <p className="md:max-w-115 w-full text-base sm:text-lg text-paragraph_black" data-content>At Maypas Pay, we define success through the stability and growth of our clients. Our core metrics reflect a commitment to liquidity.</p>
                 </div>
                 
                 <div className="">

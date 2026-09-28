@@ -195,7 +195,7 @@ export default function HeroThree() {
                                 </div>
                                 <h1 className="text-3xl md:text-4xl lg:text-[40px] xl:text-5xl font-bold leading-[1.1]! text-white mt-4 md:mt-5" data-title>
                                     Your Vision, Backed by Our Institutional Strength.</h1>
-                                <p className="text-base text-paragraph_white mt-4" data-excerpt>SecureVest bridges the gap between ambition and execution. We provide high-velocity financing tailored to the complexities of modern global trade.
+                                <p className="text-base text-paragraph_white mt-4" data-excerpt>Maypas Pay bridges the gap between ambition and execution. We provide high-velocity financing tailored to the complexities of modern global trade.
                                 </p>
                                 <div className="mt-6 sm:mt-8 lg:mt-12 flex items-center gap-3" data-button>
                                     <Link to="/partners" className="button-primary">

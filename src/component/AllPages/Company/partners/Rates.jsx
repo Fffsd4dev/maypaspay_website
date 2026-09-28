@@ -133,7 +133,7 @@ export default function Rates() {
                         </div>
                         <h2 className="text-3xl md:text-4xl lg:text-[40px] xl:text-5xl font-bold leading-tight text-title_white mt-4" data-content>How Your Credit Score Impacts Rates</h2>
                     </div>
-                    <p className="md:max-w-115 w-full text-base sm:text-lg text-paragraph_white" data-content>At SecureVest, we reward financial responsibility. Your credit score serves as a real-time risk indicator.</p>
+                    <p className="md:max-w-115 w-full text-base sm:text-lg text-paragraph_white" data-content>At Maypas Pay, we reward financial responsibility. Your credit score serves as a real-time risk indicator.</p>
                 </div>		
                 <div ref={cardsRef} className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 lg:gap-12" data-sttr-wrapper>
                     

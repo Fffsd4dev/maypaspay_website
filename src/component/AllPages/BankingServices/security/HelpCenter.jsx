@@ -12,7 +12,7 @@ export default function HelpCenter() {
     const centers = [
         {
             title : 'Cookie Policy', 
-            desc : 'GlobalBank integrated SecureVestâ€™s cold-storage vault infrastructure to offer their HNW clients secure access to regulated digital asset portfolios.', 
+            desc : 'GlobalBank integrated Maypas Payâ€™s cold-storage vault infrastructure to offer their HNW clients secure access to regulated digital asset portfolios.', 
         },
         {
             title : 'Privacy Policy', 

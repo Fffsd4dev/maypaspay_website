@@ -106,7 +106,7 @@ export default function GlobalAccess() {
                                     <img className="rotate" src={titlePrimary} alt="title-icon" />
                                     <span className="text-base lg:text-lg font-semibold leading-[1.1]! text-primary uppercase">GLOBAL ACCESS</span>
                                 </div>
-                                <h3 className="font-bold leading-tight text-title_white mt-4 sm:mt-5" data-content>Stuck? Start Using SecureVest Today!</h3>
+                                <h3 className="font-bold leading-tight text-title_white mt-4 sm:mt-5" data-content>Stuck? Start Using Maypas Pay Today!</h3>
                                 <p className="mt-4 text-base sm:text-lg text-paragraph_white" data-content>
                                     We empower the next generation of founders with a mobile-first banking experience. Manage capital, monitor security, and scale your business from the palm of your hand.
                                 </p>

@@ -392,7 +392,7 @@ export default function ApplyForm() {
                             <span className="text-base lg:text-lg font-semibold leading-[1.1]! text-secondary uppercase">LOAN FORM</span>
                         </div>
                         <h3 className="font-bold leading-tight text-title_black mt-4" data-content>Apply and Get Loan!</h3>
-                        <p className="mt-4 text-base sm:text-lg text-paragraph_black" data-content>At SecureVest, we empower the entrepreneurs of tomorrow with the capital, security, and strategic guidance they need to scale globally.</p>
+                        <p className="mt-4 text-base sm:text-lg text-paragraph_black" data-content>At Maypas Pay, we empower the entrepreneurs of tomorrow with the capital, security, and strategic guidance they need to scale globally.</p>
                     </div>
 
                     <div ref={cardsRef} className="loan-form-light" data-sttr-wrapper>

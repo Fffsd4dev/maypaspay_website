@@ -216,7 +216,7 @@ export default function Infrastructure() {
                                 <p className="text-base lg:text-lg font-semibold leading-[1.1]! text-primary uppercase">INTEGRATED MERCHANT INFRASTRUCTURE</p>
                             </div>
                             <h3 className="font-bold leading-tight text-title_white mt-4 sm:mt-5">Financial Rails for Global Expansion</h3>
-                            <p className="mt-4 text-base sm:text-lg text-paragraph_white">SecureVest provides the enterprise-grade payment architecture and regulatory framework required to navigate complex markets.</p>
+                            <p className="mt-4 text-base sm:text-lg text-paragraph_white">Maypas Pay provides the enterprise-grade payment architecture and regulatory framework required to navigate complex markets.</p>
                             <ul className="mt-6 sm:mt-7 md:mt-8 lg:mt-9 flex flex-col gap-3 text-paragraph_white text-base leading-tight">
                                 <li className="flex items-center gap-2">
                                     <svg className="w-5.25 h-5.25">

@@ -116,7 +116,7 @@ export default function Trackings() {
                                 </div>
                                 <h2 className="text-3xl md:text-4xl lg:text-[40px] xl:text-5xl font-bold leading-tight text-title_white mt-4" data-content>Our 5 Step Eligibility Flow</h2>
                             </div>
-                            <p className="md:max-w-115 w-full text-base sm:text-lg text-paragraph_white" data-content>At SecureVest, we empower the entrepreneurs of tomorrow with the capital, security, and strategic guidance they need to scale globally.</p>
+                            <p className="md:max-w-115 w-full text-base sm:text-lg text-paragraph_white" data-content>At Maypas Pay, we empower the entrepreneurs of tomorrow with the capital, security, and strategic guidance they need to scale globally.</p>
                         </div>				
                         <div ref={cardsRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 mt-10 md:mt-14 lg:mt-20" data-sttr-wrapper>
                             
@@ -174,10 +174,10 @@ export default function Trackings() {
                         </div>
                     </div>
                     <div className="absolute bottom-0 left-0 pointer-events-none z-10">
-                        <img src={position1} alt="SecureVest illustration" />
+                        <img src={position1} alt="Maypas Pay illustration" />
                     </div>
                     <div className="absolute top-0 right-0 pointer-events-none z-10">
-                        <img src={position2} alt="SecureVest illustration" />
+                        <img src={position2} alt="Maypas Pay illustration" />
                     </div>
                 </div>
             </div>

@@ -370,10 +370,10 @@ export default function CycleTab() {
                 <div className="container-lg">
                     <div className="bg-secondary rounded-3xl overflow-hidden px-5 pt-10 pb-5 sm:p-10 md:p-15 xl:p-25 relative z-1" data-grid-reveal data-cols="15" data-rows="6" data-cols-sm="5" data-rows-sm="18" data-cols-lg="8" data-rows-lg="16" data-animation="wave" data-bg-color="white" data-trigger="top 70%" data-stagger="0.005" data-duration="0.6">
                         <div className="absolute bottom-0 left-0 pointer-events-none -z-1">
-                            <img src={getstratedPositon1} alt="SecureVest illustration" />
+                            <img src={getstratedPositon1} alt="Maypas Pay illustration" />
                         </div>
                         <div className="absolute top-0 right-0 pointer-events-none -z-1">
-                            <img src={getstratedPositon2} alt="SecureVest illustration" />
+                            <img src={getstratedPositon2} alt="Maypas Pay illustration" />
                         </div>
                         {/* <!-- Section Title --> */}
                         <div ref={sectionRef} className="flex items-start justify-between gap-4 md:gap-10 mb-12 sm:mb-14 md:mb-16 lg:mb-20 flex-col md:flex-row max-w-125 md:max-w-full" data-section-title>

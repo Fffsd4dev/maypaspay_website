@@ -33,13 +33,13 @@ export default function Testimonial() {
             img : client02, 
             name : 'Marcus Thorne', 
             title : 'CEO, CloudScale Tech', 
-            desc : 'SecureVest transformed how we manage our international payroll. Their real-time exchange rates saved us thousands in our first month alone.',
+            desc : 'Maypas Pay transformed how we manage our international payroll. Their real-time exchange rates saved us thousands in our first month alone.',
         },
         {
             img : client03, 
             name : 'Elena Rodriguez', 
             title : 'Founder, Bloom Digital', 
-            desc : 'As a startup founder, I need a bank that moves at my speed. The SecureVest mobile interface is the most intuitive I"ve ever used for high-stakes wealth management.',
+            desc : 'As a startup founder, I need a bank that moves at my speed. The Maypas Pay mobile interface is the most intuitive I"ve ever used for high-stakes wealth management.',
         },
         {
             img : client04, 
@@ -165,7 +165,7 @@ export default function Testimonial() {
                             <p className="text-base sm:text-lg font-semibold leading-[1.1]! text-secondary capitalize">CLIENT SUCCESS STORIES</p>
                         </div>
                         <h3 className="font-bold leading-tight text-title_black mt-4" data-sttr-card>Trusted by the Next Gen. of Founders</h3>
-                        <p className="mt-4 text-base sm:text-lg text-paragraph_black" data-sttr-card>At SecureVest, we empower the entrepreneurs of tomorrow with the capital, security, and strategic guidance they need to scale globally.</p>
+                        <p className="mt-4 text-base sm:text-lg text-paragraph_black" data-sttr-card>At Maypas Pay, we empower the entrepreneurs of tomorrow with the capital, security, and strategic guidance they need to scale globally.</p>
                         <ul className="flex flex-col gap-4 mt-9" data-sttr-card>
                             <li className="text-base flex items-start gap-3">
                                 <img className="w-5" src={tmnlIcon01} alt="testimonial icon 1" />

@@ -161,7 +161,7 @@ export default function RealTrakingArea() {
                         </div>
                         <h2 className="text-3xl md:text-4xl lg:text-[40px] xl:text-5xl font-bold leading-tight text-title_black mt-4" data-content>Our 3-Step Eligibility Flow</h2>
                     </div>
-                    <p className="md:max-w-115 w-full text-base sm:text-lg text-paragraph_black" data-content>At SecureVest, we empower the entrepreneurs of tomorrow with the capital, security, and strategic guidance.</p>
+                    <p className="md:max-w-115 w-full text-base sm:text-lg text-paragraph_black" data-content>At Maypas Pay, we empower the entrepreneurs of tomorrow with the capital, security, and strategic guidance.</p>
                 </div>		
                 <div ref={cardsRef1} className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" data-sttr-wrapper>
                     
@@ -188,7 +188,7 @@ export default function RealTrakingArea() {
                             <div className="md:max-w-170 w-full">
                                 <div className="flex items-center gap-2.5">
                                     <img className="rotate" src={titlePrimary} alt="title-icon" />
-                                    <span className="text-base lg:text-lg font-semibold leading-[1.1]! text-primary uppercase">THE SECUREVEST EDGE</span>
+                                    <span className="text-base lg:text-lg font-semibold leading-[1.1]! text-primary uppercase">THE Maypas Pay EDGE</span>
                                 </div>
                                 <h2 className="text-3xl md:text-4xl lg:text-[40px] xl:text-5xl font-bold leading-tight text-title_white mt-4" data-content>The Blueprint for Better Saving</h2>
                             </div>

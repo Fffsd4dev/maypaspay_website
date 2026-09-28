@@ -263,7 +263,7 @@ export default function Counters() {
                         <p className="text-base lg:text-lg font-semibold leading-[1.1]! text-primary uppercase">ELEVATE YOUR ENTERPRISE</p>
                     </div>
                     <h3 className="font-bold leading-tight text-title_white mt-4 sm:mt-5">The Strategic Engine for Your Global Ambitions.</h3>
-                    <p className="mt-4 text-base sm:text-lg text-paragraph_white">Don't navigate the complexities of international finance alone. SecureVest provides the elite capital, institutional security, and high-level advisory required to transform your vision into a global market leader.</p>
+                    <p className="mt-4 text-base sm:text-lg text-paragraph_white">Don't navigate the complexities of international finance alone. Maypas Pay provides the elite capital, institutional security, and high-level advisory required to transform your vision into a global market leader.</p>
                     <div className="mt-6 md:mt-9 max-w-175 flex justify-between gap-6 flex-wrap">
                         
                         {counters.map((item, index)=>(

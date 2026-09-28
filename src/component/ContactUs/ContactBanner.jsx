@@ -170,11 +170,11 @@ export default function ContactBanner() {
                             </li>
                         </ul>
                         <div className="flex flex-col gap-3 md:gap-4 mt-6 md:mt-9" data-sttr-card>
-                            <Link className="flex items-center gap-3 text-base sm:text-lg font-semibold text-title_black duration-300 hover:text-secondary" to="mailto:hello@securevest.com">
+                            <Link className="flex items-center gap-3 text-base sm:text-lg font-semibold text-title_black duration-300 hover:text-secondary" to="mailto:hello@Maypas Pay.com">
                                 <div className="w-10.5 h-10.5 rounded-full bg-primary flex items-center justify-center">
                                     <img src={mail} alt="email" />
                                 </div>
-                                <span>hello@securevest.com</span>
+                                <span>hello@Maypas Pay.com</span>
                             </Link>
                             <Link className="flex items-center gap-3 text-base sm:text-lg font-semibold text-title_black duration-300 hover:text-secondary" to="tel:+0001234455">
                                 <div className="w-10.5 h-10.5 rounded-full bg-primary flex items-center justify-center">

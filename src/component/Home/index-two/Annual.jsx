@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
-import mony from "../../../assets/img/home-v2/securevest-edge/mony.svg";
+import mony from "../../../assets/img/home-v2/Maypas Pay-edge/mony.svg";
 
 export default function Annual() {
 

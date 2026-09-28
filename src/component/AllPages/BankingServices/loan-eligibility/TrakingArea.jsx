@@ -129,10 +129,10 @@ export default function TrakingArea() {
             <div className="container-lg">
                 <div className="bg-secondary rounded-3xl overflow-hidden px-5 pt-10 pb-5 sm:p-10 md:p-15 xl:p-25 relative z-1">
                     <div className="absolute bottom-0 left-0 pointer-events-none -z-1">
-                        <img src={getstratedPositon1} alt="SecureVest illustration" />
+                        <img src={getstratedPositon1} alt="Maypas Pay illustration" />
                     </div>
                     <div className="absolute top-0 right-0 pointer-events-none -z-1">
-                        <img src={getstratedPositon2} alt="SecureVest illustration" />
+                        <img src={getstratedPositon2} alt="Maypas Pay illustration" />
                     </div>
 
                     <div ref={sectionRef} className="flex items-start justify-between gap-4 md:gap-10 mb-12 sm:mb-14 md:mb-16 lg:mb-20 flex-col md:flex-row max-w-125 md:max-w-full" data-section-title>
@@ -143,7 +143,7 @@ export default function TrakingArea() {
                             </div>
                             <h2 className="text-3xl md:text-4xl lg:text-[40px] xl:text-5xl font-bold leading-tight text-title_white mt-4" data-content>Our 3-Step Eligibility Flow</h2>
                         </div>
-                        <p className="md:max-w-115 w-full text-base sm:text-lg text-paragraph_white" data-content>At SecureVest, we empower the entrepreneurs of tomorrow with the capital, security, and strategic guidance they need to scale globally.</p>
+                        <p className="md:max-w-115 w-full text-base sm:text-lg text-paragraph_white" data-content>At Maypas Pay, we empower the entrepreneurs of tomorrow with the capital, security, and strategic guidance they need to scale globally.</p>
                     </div>
                     <div ref={cardsRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-sttr-wrapper>
                         

@@ -127,7 +127,7 @@ export default function InsightArea() {
                             <div className="mt-6 sm:mt-8 md:mt-10 lg:mt-15 flex items-center justify-between flex-wrap gap-3">
                                 <div className="">
                                     <h4 className="text-base sm:text-lg md:text-xl font-semibold leading-none! text-white">Brooklyn Simmons</h4>
-                                    <p className="mt-3 text-paragraph_white leading-none!">CEO Founder, SecureVest</p>
+                                    <p className="mt-3 text-paragraph_white leading-none!">CEO Founder, Maypas Pay</p>
                                 </div>
                                 <div className="max-w-43.5 w-full">
                                     <img className="w-full" src={logo} alt="logo" />

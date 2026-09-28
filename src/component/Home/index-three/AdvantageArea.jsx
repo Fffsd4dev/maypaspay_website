@@ -208,10 +208,10 @@ export default function AdvantageArea() {
                         <div className="sm:max-w-155.75 w-full pt-14 sm:py-20 lg:py-24 xl:py-27.5 2xl:py-36.25">
                             <div className="flex items-center gap-2.5">
                                 <img className="rotate" src={titlePrimary} alt="title-icon" />
-                                <span className="text-base lg:text-lg font-semibold leading-[1.1]! text-primary uppercase">THE SECUREVEST ADVANTAGE</span>
+                                <span className="text-base lg:text-lg font-semibold leading-[1.1]! text-primary uppercase">THE Maypas Pay ADVANTAGE</span>
                             </div>
                             <h3 className="font-bold leading-tight text-title_white mt-4" data-content>Ready to Architect Your Financial Future?</h3>
-                            <p className="mt-4 text-base sm:text-lg text-paragraph_white" data-content>At SecureVest, we empower the entrepreneurs of tomorrow with the capital, security, and strategic guidance they need to scale globally.</p>
+                            <p className="mt-4 text-base sm:text-lg text-paragraph_white" data-content>At Maypas Pay, we empower the entrepreneurs of tomorrow with the capital, security, and strategic guidance they need to scale globally.</p>
                             <div className="mt-6 md:mt-9 btn-sttr">
                                 <Link className="button-primary" to="/contact">
                                     Schedule Your Consultation

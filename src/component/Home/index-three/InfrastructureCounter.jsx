@@ -168,7 +168,7 @@ export default function InfrastructureCounter() {
                         </div>
                         <h3 className="font-bold leading-tight text-title_white mt-4" data-content>Institutional Reach. Local Expertise.</h3>
                     </div>
-                    <p className="md:max-w-115 w-full text-base sm:text-lg text-paragraph_white" data-content>At SecureVest, we bridge the gap between global markets. Our interconnected network of regional hubs.</p>
+                    <p className="md:max-w-115 w-full text-base sm:text-lg text-paragraph_white" data-content>At Maypas Pay, we bridge the gap between global markets. Our interconnected network of regional hubs.</p>
                 </div>
                 <div ref={cardsRef} className="relative z-1 md:h-100 lg:h-142.75" data-sttr-wrapper>
                     <div className="mix-blend-plus-darker" data-sttr-card>
