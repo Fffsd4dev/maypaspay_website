@@ -7021,7 +7021,7 @@ section .pin-spacer {
   &::before {
     content: "";
     z-index: -1;
-    background: #114a43;
+    background: #000;
     border-radius: 50%;
     width: 200%;
     height: 200%;

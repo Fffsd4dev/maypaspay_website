@@ -152,7 +152,7 @@ export default function ContactBanner() {
         <section className="section-spacing-lg">
             <div className="container">
                 <div ref={cardsRef} className="flex items-center justify-between gap-10 flex-col md:flex-row" data-sttr-wrapper>
-                    <div className="md:md:max-w-135 w-full">
+                    {/* <div className="md:md:max-w-135 w-full">
                         <h2 className="font-bold leading-tight text-title_black mt-4" data-sttr-card>Speak with a wealth advisor</h2>
                         <p className="mt-4 text-base sm:text-lg text-paragraph_black" data-sttr-card>Whether you are looking to scale your business capital or secure your family's future, our expert advisors are ready to help you navigate your journey.</p>
                         <ul className="flex flex-col gap-4 mt-9" data-sttr-card>
@@ -189,7 +189,7 @@ export default function ContactBanner() {
                                 <span>123 Fifth Ave, New York, NY 12004</span>
                             </Link>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="md:max-w-165 w-full bg-background border border-border rounded-2xl md:rounded-3xl py-5 px-4 sm:p-6 md:p-8 lg:p-9" data-sttr-card>
                         <div className="mb-8 md:mb-10 lg:mb-12">
                             <h4 className="text-xl md:text-2xl text-title_black font-semibold leading-tight!">Book Your Consultation Slot</h4>
