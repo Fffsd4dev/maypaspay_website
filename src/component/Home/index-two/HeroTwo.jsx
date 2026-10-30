@@ -106,7 +106,7 @@ export default function HeroTwo() {
                             <img className="rotate" src={titleIcon} alt="title-icon" />
                             <p className="text-base sm:text-lg font-semibold leading-[1.1]! text-secondary uppercase">SMART ASSETS</p>
                         </div>
-                        <h1 className="text-4xl sm:text-[30px] md:text-5xl lg:text-[42px] xl:text-[54px] font-bold leading-[1.1]! text-title_black mt-4 md:mt-5" data-title>Grow your money. Spend in US Dollars. Withdraw in Nigerian Naira.</h1>
+                        <h1 className="text-4xl sm:text-[30px] md:text-5xl lg:text-[42px] xl:text-[54px] font-bold leading-[1.1]! text-title_black mt-4 md:mt-5" data-title>One Place to Save, Pay & Swap Currencies</h1>
                         <p className="text-base text-paragraph_black mt-4" data-excerpt>Convert your digital assets to Naira or US Dollars at competitive market rates. Fund your virtual cards, make international payments,save and withdraw  funds securely through one trusted platform. </p>
                         <div className="mt-6 sm:mt-8 lg:mt-12 flex items-center gap-3" data-button>
                             <a href="#global-access" className="button-primary text-white!">Download App</a>
