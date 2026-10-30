@@ -39,7 +39,7 @@ const CONTACTS = [
         alt: "Address",
         href: "https://www.google.com/maps",
         external: true,
-        text: "96a, Odudwa Crescent, GRA Ikeja. Lagos State, Nigeria",
+        text: "96 A, Odudwa Crescent, GRA Ikeja. Lagos State, Nigeria",
         desktopOnly: true,
     },
     {
