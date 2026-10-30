@@ -106,8 +106,8 @@ export default function HeroTwo() {
                             <img className="rotate" src={titleIcon} alt="title-icon" />
                             <p className="text-base sm:text-lg font-semibold leading-[1.1]! text-secondary uppercase">SMART ASSETS</p>
                         </div>
-                        <h1 className="text-4xl sm:text-[30px] md:text-5xl lg:text-[42px] xl:text-[54px] font-bold leading-[1.1]! text-title_black mt-4 md:mt-5" data-title>Convert Cryptocurrency to Cash. Spend in US Dollars. Withdraw in Nigerian Naira</h1>
-                        <p className="text-base text-paragraph_black mt-4" data-excerpt>Convert your crypto to Naira or USD at the best market rates. Fund virtual cards, spend globally, and cash out securely on one trusted platform. </p>
+                        <h1 className="text-4xl sm:text-[30px] md:text-5xl lg:text-[42px] xl:text-[54px] font-bold leading-[1.1]! text-title_black mt-4 md:mt-5" data-title>Grow your money. Spend in US Dollars. Withdraw in Nigerian Naira.</h1>
+                        <p className="text-base text-paragraph_black mt-4" data-excerpt>Convert your digital assets to Naira or US Dollars at competitive market rates. Fund your virtual cards, make international payments,save and withdraw  funds securely through one trusted platform. </p>
                         <div className="mt-6 sm:mt-8 lg:mt-12 flex items-center gap-3" data-button>
                             <a href="#global-access" className="button-primary text-white!">Download App</a>
                             <Link className="video-popup w-10 md:w-12 h-10 md:h-12 rounded-full bg-title_black flex items-center justify-center text-white" to="https://www.youtube.com/embed/S_CGed6E610?si=8usIVmgCLNXWZE_K">
