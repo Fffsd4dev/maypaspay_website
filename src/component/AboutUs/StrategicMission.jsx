@@ -208,7 +208,7 @@ export default function StrategicMission() {
                         </div>
                         <div className="" data-sttr-card>
                             <h3 className="text-title_black leading-none text-xl md:text-2xl font-semibold">Redefining Africa Finance</h3>
-                            <p className="text-base font-normal text-paragraph_black leading-normal mt-3">At Maypas Pay, we exist to bridge the gap between local liquidity and the global digital economy. We empower creators, traders, freelancers, and businesses to hold, swap, and spend crypto, USD, and Naira effortlessly, without card declines, settlement delays, or artificial banking borders.
+                            <p className="text-base font-normal text-paragraph_black leading-normal mt-3">At Maypas Pay, we exist to bridge the gap between local liquidity and the global digital economy. We empower creators, traders, freelancers, and businesses to hold, swap, and spend digital assets, USD, and Naira effortlessly, without card declines, settlement delays, or artificial banking borders.
                             </p>
 
                             <div className="flex flex-row gap-10 justify-between flex-wrap mt-6 md:mt-9">
